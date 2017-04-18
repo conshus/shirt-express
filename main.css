@@ -1,0 +1,226 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  width:80vw;
+}
+.blue {
+  color: #95c3e4;
+}
+.pink {
+  color: #e577a9;
+}
+.yellow {
+  color: #e1ae75;
+}
+.green {
+  color: #8bb992;
+}
+.flex {
+  display: flex;
+}
+.fcolumn {
+  flex-direction: column;
+}
+.vcenter{
+  align-items: center;
+}
+.hcenter{
+  justify-content: center;
+}
+.space_around{
+  justify-content: space-around;
+}
+.space_between {
+  justify-content: space-between;
+}
+.flex_end{
+  align-items: flex-end;
+}
+.flex_wrap{
+  flex-wrap: wrap;
+}
+.hflex_end{
+  justify-content: flex-end;
+}
+.store_item {
+  position: relative;
+  display: inline-block;
+  margin-top: 2rem;
+}
+.display {
+  border: 0.2rem solid #95c3e4;
+  border-bottom-width: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  line-height: 0;
+  position: relative;
+}
+.shirt {
+  position:relative;
+}
+.design {
+  position: absolute;
+  left: 0;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  transition: transform .5s ease;
+}
+.design_back {
+  position: relative;
+  left: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: transform .5s ease;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width:20rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+/* Keeping just in case we want to flip when hover over shirt.
+.shirt:hover .design{
+  transform: rotateY(180deg);
+}
+.shirt:hover .design_back{
+  transform: rotateY(0deg);
+}
+*/
+.fa-undo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #95c3e4;
+  font-size: 2rem !important;
+  border-right: .2rem solid #95c3e4;
+  border-top: .2rem solid #95c3e4;
+  padding: .7rem;
+  transition: background-color .5s, color .5s;
+}
+.fa-undo:hover{
+  background-color: #95c3e4;
+  color: white;
+}
+/* Not sure if I'm grasping this correctly, but apparently the + (could also
+use ~, but that targets all following matching elements) to change an element
+isn't directly "related". I still have to look more into this. */
+.fa-undo:hover + .shirt .design{
+  transform: rotateY(180deg);
+}
+.fa-undo:hover + .shirt .design_back{
+  transform: rotateY(0deg);
+}
+menu {
+  margin: 0;
+  padding: 0;
+}
+menu:before{
+  margin: 0;
+}
+menu ul{
+  margin: 0;
+  padding: 0;
+}
+menu li{
+  display: inline-block;
+  width: 20%;
+}
+.item {
+  position: relative;
+  color: #95c3e4;
+  font-size: 1.5rem;
+  border: .2rem solid #95c3e4;
+  width: 20%;
+  margin: -1px;
+  height: 3rem;
+  transition: background-color .5s ease, color .5s ease;
+}
+menu .item:nth-child(4) .fa {
+  border: .2rem solid white;
+}
+.item:hover{
+  background-color: #95c3e4;
+  color: white;
+}
+.info {
+  color: #95c3e4;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.price {
+  font-weight: bold;
+}
+.submenu{
+  position: absolute;
+  bottom: 12rem;
+  transform: translateY(6rem);
+  border: .2rem solid #95c3e4;
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+  opacity: 0;
+  z-index: -1;
+  /*pointer-events: none;*/
+  transition: transform .5s, opacity .5s, z-index .25s;
+}
+.submenu:before {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    position: absolute;
+    bottom: -2.24rem;
+    left:40%;
+    font-size: 3rem;
+}
+.submenu:after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    position: absolute;
+    bottom: -2rem;
+    left:40%;
+    font-size: 3rem;
+    color: white;
+}
+.submenu i{
+  font-size: 2rem;
+  transition: font-size .5s;
+}
+.submenu i:hover {
+  font-size: 3rem;
+}
+.item:hover .submenu{
+  transform: translateY(9rem);
+  color: #95c3e4;
+  opacity: 1;
+  z-index: 5;
+}
+.mock_shirt {
+  background-image: url('assets/tshirt.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "assets/tshirt.svg";
+  background-size: 3rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  transition: background-size .5s, height .5s, font-size .5s;
+}
+.mock_shirt:hover {
+  background-size: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+}
+#shirtQuanity{
+  /*visibility: hidden;*/
+}
+.soldOut{
+  color:red;
+  font-weight: bold;
+}
+.cartDisable{
+  background-color: red;
+  pointer-events: none;
+}

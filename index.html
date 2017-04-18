@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>T-shirt Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900i" rel="stylesheet">
+  <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+</head>
+<body class="flex space_around flex_wrap vcenter">
+  <div class="store_item">
+    <div class="display">
+      <i class="fa fa-undo fa-rotate-180" aria-hidden="true"></i>
+      <div class="shirt">
+        <img src="assets/blue-front.png" class="design">
+        <img src="assets/blue-back.png" class="design_back">
+      </div>
+    </div>
+    <menu class="flex">
+      <div class="item flex hcenter vcenter"><i class="fa fa-exchange" aria-hidden="true"></i></div>
+      <div class="item flex hcenter vcenter"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+      <div class="item flex hcenter vcenter">
+        <menu class="submenu">
+          <span class="mock_shirt flex hcenter vcenter">XL</span>
+          <span class="mock_shirt flex hcenter vcenter">L</span>
+          <span class="mock_shirt flex hcenter vcenter">M</span>
+          <span class="mock_shirt flex hcenter vcenter">S</span>
+        </menu>
+        <div class="shirtSize">XL</div>
+        <!--XL-->
+      </div>
+      <div class="item flex hcenter vcenter"><i class="fa fa-stop blue colorSelected" colorselected="blue" aria-hidden="true"></i>
+        <menu class="submenu">
+          <div class="flex hcenter">
+            <i class="fa fa-stop blue mock_color" mockcolor="blue" aria-hidden="true"></i>
+            <i class="fa fa-stop pink mock_color" mockcolor="pink" aria-hidden="true"></i>
+          </div>
+          <div class="flex hcenter">
+            <i class="fa fa-stop yellow mock_color" mockcolor="yellow" aria-hidden="true"></i>
+            <i class="fa fa-stop green mock_color" mockcolor="green" aria-hidden="true"></i>
+          </div>
+        </menu>
+      </div>
+      <div id="0" class="shoppingCartButton item flex hcenter vcenter"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+    </menu>
+    <div class="info flex space_between">
+      <div id="title0" class="title"></div>
+      <span class="soldOut"></span>
+      <div>$<span id="price0" class="price"></span></div>
+    </div>
+  </div>
+  <div class="store_item">
+    <div class="display">
+      <i class="fa fa-undo fa-rotate-180" aria-hidden="true"></i>
+      <div class="shirt">
+        <img src="assets/pink-front.png" class="design">
+        <img src="assets/pink-back.png" class="design_back">
+      </div>
+    </div>
+    <menu class="flex">
+      <div class="item flex hcenter vcenter"><i class="fa fa-exchange" aria-hidden="true"></i></div>
+      <div class="item flex hcenter vcenter"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+      <div class="item flex hcenter vcenter">
+        <menu class="submenu hcenter">
+          <div class="mock_shirt flex hcenter vcenter">XL</div>
+          <div class="mock_shirt flex hcenter vcenter">L</div>
+          <div class="mock_shirt flex hcenter vcenter">M</div>
+          <div class="mock_shirt flex hcenter vcenter">S</div>
+        </menu>
+        <div class="shirtSize">XL</div>
+      </div>
+      <div class="item flex hcenter vcenter"><i class="fa fa-stop pink colorSelected" colorselected="pink" aria-hidden="true"></i>
+        <menu class="submenu">
+          <div class="flex hcenter">
+            <i class="fa fa-stop blue mock_color" mockcolor="blue" aria-hidden="true"></i>
+            <i class="fa fa-stop pink mock_color" mockcolor="pink" aria-hidden="true"></i>
+          </div>
+          <div class="flex hcenter">
+            <i class="fa fa-stop yellow mock_color" mockcolor="yellow" aria-hidden="true"></i>
+            <i class="fa fa-stop green mock_color" mockcolor="green" aria-hidden="true"></i>
+          </div>
+        </menu>
+      </div>
+      <div id="1" class="shoppingCartButton item flex hcenter vcenter"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+    </menu>
+    <div class="info flex space_between">
+      <div id="title1" class="title"></div>
+      <span class="soldOut"></span>
+      <div>$<span id="price1" class="price"></span></div>
+    </div>
+  </div>
+  <div class="store_item">
+    <div class="display">
+      <i class="fa fa-undo fa-rotate-180" aria-hidden="true"></i>
+      <div class="shirt">
+        <img src="assets/yellow-front.png" class="design">
+        <img src="assets/yellow-back.png" class="design_back">
+      </div>
+    </div>
+    <menu class="flex">
+      <div class="item flex hcenter vcenter"><i class="fa fa-exchange" aria-hidden="true"></i></div>
+      <div class="item flex hcenter vcenter"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+      <div class="item flex hcenter vcenter">
+        <menu class="submenu">
+          <div class="mock_shirt flex hcenter vcenter">XL</div>
+          <div class="mock_shirt flex hcenter vcenter">L</div>
+          <div class="mock_shirt flex hcenter vcenter">M</div>
+          <div class="mock_shirt flex hcenter vcenter">S</div>
+        </menu>
+        <div class="shirtSize">XL</div>
+      </div>
+      <div class="item flex hcenter vcenter"><i class="fa fa-stop yellow colorSelected" colorselected="yellow" aria-hidden="true"></i>
+        <menu class="submenu">
+          <div class="flex hcenter">
+            <i class="fa fa-stop blue mock_color" mockcolor="blue" aria-hidden="true"></i>
+            <i class="fa fa-stop pink mock_color" mockcolor="pink" aria-hidden="true"></i>
+          </div>
+          <div class="flex hcenter">
+            <i class="fa fa-stop yellow mock_color" mockcolor="yellow" aria-hidden="true"></i>
+            <i class="fa fa-stop green mock_color" mockcolor="green" aria-hidden="true"></i>
+          </div>
+        </menu>
+      </div>
+      <div id="2" class="shoppingCartButton item flex hcenter vcenter"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+    </menu>
+    <div class="info flex space_between">
+      <div id="title2" class="title"></div>
+      <span class="soldOut"></span>
+      <div>$<span id="price2" class="price"></span></div>
+    </div>
+  </div>
+  <section id="shoppingCart" class="fixed">
+    <h1><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart</h1>
+    <div id="shoppingCartItems">
+      no items
+    </div>
+    <div class="flex hflex_end"><div><strong>Subtotal:</strong> $<span id="shoppingCartSubtotal">0</span></div></div>
+    <div class="flex space_between"><div id="discountLimitText"></div><span id="discountLimit">Only 5 more items!</span><div><strong>Discount:</strong> $<span id="shoppingCartDiscount">0</span></div></div>
+    <div class="flex hflex_end"><div><strong>Total:</strong> $<span id="shoppingCartTotal">0</span></div></div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
